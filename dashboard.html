@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded ArcGIS Dashboard</title>
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 80%;
+            height: 0;
+            max-width: 100%;
+        }
+        .embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>My ArcGIS Dashboard</h1>
+    <div class="embed-container">
+        <iframe src="https://gisanddata.maps.arcgis.com/apps/dashboards/795aa8f9ac594d299fc837f864b86437" frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
