@@ -4,31 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArcGIS Dashboard Embed</title>
+
     <style>
         .embed-container {
             position: relative;
             padding-bottom: 80%;
             height: 0;
-            overflow: hidden;
             max-width: 100%;
         }
-        .embed-container iframe {
+        .embed-container iframe, 
+        .embed-container object, 
+        .embed-container embed {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+        }
+        small {
+            position: absolute;
+            z-index: 40;
+            bottom: 0;
+            margin-bottom: -15px;
         }
     </style>
 </head>
 <body>
-    <h1>My ArcGIS Dashboard</h1>
+
+    <h1>Bridges Information Dashboard</h1>
+
     <div class="embed-container">
         <iframe 
-            src="https://gisanddata.maps.arcgis.com/apps/dashboards/96498b7cf3ab4bfb8aa7b42f65641323"
-            allowfullscreen>
+            width="500" 
+            height="400" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            title="Bridges Info" 
+            src="//gisanddata.maps.arcgis.com/apps/Embed/index.html?webmap=6dd4d440a6a44b8a968d2661b8afdd40&extent=-134.1219,-0.9598,-59.1512,46.2606&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
         </iframe>
     </div>
+
 </body>
 </html>
